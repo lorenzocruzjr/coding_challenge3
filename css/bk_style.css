@@ -1,0 +1,126 @@
+body {
+  height: 100%;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  /* background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  background-repeat: no-repeat; */
+  background-color: hsl(273, 75%, 66%);
+}
+
+h1 {
+  font-size: 25px;
+}
+
+/* mainContainer */
+.mainContainer {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  /* padding: 129px 240px */
+}
+
+/* innerContainer */
+.innerContainer {
+  /* max-width: 980px;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.accordionContent {
+  display: none;
+}
+
+/* Opened state for the accordion item */
+.accordionItem.open .accordionContent {
+  display: block;
+}
+
+.bnrContainer {
+  position: relative;
+  width: auto;
+}
+
+/* .bnrContainer .img01 {
+  width: 472px;
+} */
+
+.bnrContainer .img02 {
+  position: absolute;
+  max-width: 36%;
+  top: 102px;
+  left: -10px;
+}
+
+.arrow {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordionItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* .accordionContent {
+  transition: opacity 200ms ease 0s;
+} */
+
+.accordionContainer {
+  width: 30%;
+}
+
+/* .accordionInner {
+  max-height: 0;
+} */
+
+.accordionItem {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+/* .accordionBtn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/icon-arrow-down.svg") right no-repeat;
+  content: "";
+} */
+
+.accordionItem p {
+  padding: 10px 0;
+  cursor: auto;
+  /* transition: transform 0.2s ease-in-out; */
+}
+
+.txtBold {
+  font-weight: bold;
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+*/
+
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  .bnrContainer .img3 {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 375px) {
+  .bnrContainer .img3 {
+    width: 200px;
+    display: block;
+  }
+} */
